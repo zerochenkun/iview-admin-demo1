@@ -22,13 +22,22 @@ const frameIn = [
                 }
             },
             {
-                path: 'test',
-                name: 'test',
+                path: 'tree',
+                name: 'tree',
                 meta: {
-                    title: 'test vue',
-                    auth: true
+                    title: 'tree',
+                    auth: false
                 },
-                component: () => import('@/pages/Test.vue')
+                component: () => import('@/pages/tree/tree.vue')
+            },
+            {
+                path: 'car',
+                name: 'car',
+                meta: {
+                    title: 'car',
+                    auth: false
+                },
+                component: () => import('@/pages/tree/car')
             },
             {
                 path: 'log',
